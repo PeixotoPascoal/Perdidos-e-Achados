@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perdidos e Achados Luanda – Documentos encontrados na via pública</title>
+  <meta name="description" content="Documentos encontrados na rua em Luanda, publicados para que os donos os possam recuperar.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="topo">
+    <div class="container topo-conteudo">
+      <a href="#inicio" class="marca">
+        <span class="marca-icone" aria-hidden="true">PA</span>
+        <span class="marca-texto">Perdidos e Achados <small>Luanda, Icolo e Bengo</small></span>
+      </a>
+      <nav class="menu" aria-label="Navegação principal">
+        <a href="#documentos">Documentos</a>
+        <a href="#como-funciona">Como funciona</a>
+        <a href="#privacidade">Privacidade</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="container">
+        <h1>Perdeu um documento em Luanda ou Icolo e Bengo?<br>Podemos ter encontrado.</h1>
+        <p class="hero-texto">Aqui publicamos os documentos encontrados na via pública, sem expor dados pessoais, para que cada um volte ao seu legítimo dono.</p>
+        <a href="#documentos" class="botao botao-principal">Procurar o meu documento</a>
+      </div>
+    </section>
+
+    <section class="secao" id="documentos">
+      <div class="container">
+        <h2>Documentos encontrados</h2>
+        <p class="secao-intro">Filtre por zona, tipo de documento ou iniciais do titular.</p>
+
+        <div class="filtros">
+          <label>
+            <span>Pesquisar</span>
+            <input type="search" id="pesquisa" placeholder="Iniciais, zona ou tipo">
+          </label>
+          <label>
+            <span>Zona</span>
+            <select id="filtro-zona"><option value="">Todas as zonas</option></select>
+          </label>
+          <label>
+            <span>Tipo de documento</span>
+            <select id="filtro-tipo"><option value="">Todos os tipos</option></select>
+          </label>
+          <label>
+            <span>Estado</span>
+            <select id="filtro-estado">
+              <option value="">Todos</option>
+              <option value="Disponível">Disponível</option>
+              <option value="Em contacto">Em contacto</option>
+              <option value="Entregue">Entregue</option>
+            </select>
+          </label>
+        </div>
+
+        <p class="contagem" id="contagem" aria-live="polite"></p>
+        <div class="grelha" id="lista-documentos"></div>
+        <p class="vazio" id="mensagem-vazia" hidden>Não foram encontrados documentos com estes critérios. Tente alargar a pesquisa.</p>
+      </div>
+    </section>
+
+    <section class="secao secao-clara" id="como-funciona">
+      <div class="container">
+        <h2>Como funciona</h2>
+        <ol class="passos">
+          <li>
+            <h3>Procure</h3>
+            <p>Consulte a lista e filtre pela zona onde perdeu o documento.</p>
+          </li>
+          <li>
+            <h3>Contacte-nos</h3>
+            <p>Clique no botão de WhatsApp da publicação correspondente.</p>
+          </li>
+          <li>
+            <h3>Confirme que é seu</h3>
+            <p>Pediremos um detalhe do documento que não está publicado, como a data de nascimento.</p>
+          </li>
+          <li>
+            <h3>Levante presencialmente</h3>
+            <p>Combinamos a entrega num local público e seguro, com apresentação de outro documento com fotografia.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="secao" id="privacidade">
+      <div class="container estreito">
+        <h2>Privacidade e proteção de dados</h2>
+        <p>Respeitamos os dados de quem perdeu o documento. Por isso, em cada publicação mostramos apenas o tipo de documento, as iniciais do titular, a zona e a data em que foi encontrado.</p>
+        <p><strong>Nunca publicamos:</strong> fotografias do documento, números de documento, datas de nascimento, moradas ou filiação.</p>
+        <p>Se o seu documento aparece aqui e prefere que seja retirado, ou se encontrou os seus dados publicados por engano, contacte-nos e removemos a publicação de imediato.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape" id="contacto">
+    <div class="container rodape-conteudo">
+      <div>
+        <h3>Perdidos e Achados - Luanda, Icolo e Bengo</h3>
+        <p>Um serviço independente para devolver documentos aos seus donos.</p>
+      </div>
+      <div>
+        <h3>Contacto</h3>
+        <p class="contacto-linha">
+          <span class="contacto-rotulo">WhatsApp</span>
+          <a class="contacto-botao" href="https://wa.me/244923476546" target="_blank" rel="noopener">+244 923 476 546</a>
+        </p>
+        <!-- Quando criares o e-mail do projeto, substitui o texto abaixo e remove os comentários -->
+        <!-- <p>E-mail: <a href="mailto:o-teu-email@exemplo.com">o-teu-email@exemplo.com</a></p> -->
+      </div>
+    </div>
+    <div class="container rodape-fim">
+      <p> © <span id="ano"></span> Digitaliza. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
