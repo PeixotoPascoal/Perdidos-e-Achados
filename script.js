@@ -5,10 +5,6 @@ const WHATSAPP = "244928336212";
 
 // ============================================================
 // LISTA DE DOCUMENTOS
-// Para acrescentar um documento, copia um bloco, cola por baixo
-// e altera os campos. Estado: "Disponível", "Em contacto" ou "Entregue".
-// Nunca ponhas aqui nomes completos nem números de documentos.
-// Os documentos abaixo são apenas exemplos: apaga-os antes de publicar.
 // ============================================================
 const documentos = [
   {
@@ -38,7 +34,7 @@ const documentos = [
 ];
 
 // ============================================================
-// CÓDIGO DO SITE (não é preciso alterar daqui para baixo)
+// CÓDIGO DO SITE
 // ============================================================
 const lista = document.getElementById("lista-documentos");
 const contagem = document.getElementById("contagem");
