@@ -5,6 +5,10 @@ const WHATSAPP = "244928336212";
 
 // ============================================================
 // LISTA DE DOCUMENTOS
+// Para acrescentar um documento, copia um bloco, cola por baixo
+// e altera os campos. Estado: "Disponível", "Em contacto" ou "Entregue".
+// Nunca ponhas aqui nomes completos nem números de documentos.
+// Os documentos abaixo são apenas exemplos: apaga-os antes de publicar.
 // ============================================================
 const documentos = [
   {
@@ -31,18 +35,10 @@ const documentos = [
     data: "2026-11-04",
     estado: "Em contacto"
   }
-  {
-    id: "PA-004",
-    tipo: "Cartão Multicaixa",
-    iniciais: "P. F. P.",
-    zona: "Desvio do Zango",
-    data: "2026-11-07",
-    estado: "Entregue"
-  }
 ];
 
 // ============================================================
-// CÓDIGO DO SITE
+// CÓDIGO DO SITE (não é preciso alterar daqui para baixo)
 // ============================================================
 const lista = document.getElementById("lista-documentos");
 const contagem = document.getElementById("contagem");
