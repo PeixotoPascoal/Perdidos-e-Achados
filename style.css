@@ -192,36 +192,8 @@ a { color: var(--azul); }
 .rodape a { color: var(--branco); }
 .rodape h3 { color: var(--branco); margin-bottom: 8px; font-size: 1.05rem; }
 .rodape-conteudo { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 28px; padding-bottom: 28px; }
-.rodape-fim { border-top: 1px solid rgba(255,255,255,0.15); padding: 16px 0; font-size: 0.88rem; }
+.rodape-fim { border-top: 1px solid rgba(255,255,255,0.15); padding: 16px 0; font-size: 0.88rem; }
 
-/* Contacto do rodapé */
-.contacto-linha {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 12px;
-}
-.contacto-rotulo {
-  font-size: 1rem;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  color: #aebccd;
-}
-.rodape a.contacto-botao {
-  display: inline-block;
-  padding: 2px 8px;
-  border: 0.5px solid rgba(255, 255, 255, 0.45);
-  border-radius: 999px;
-  color: var(--branco);
-  text-decoration: none;
-  font-weight: 500;
-  letter-spacing: -0.5px;
-  transition: background 0.2s ease, border-color 0.2s ease;
-}
-.rodape a.contacto-botao:hover {
-  background: rgba(255, 255, 255, 0.14);
-  border-color: var(--branco);
-}
 
 @media (max-width: 600px) {
   .hero { padding: 56px 0; }
