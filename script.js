@@ -14,7 +14,7 @@ const documentos = [
   {
     id: "PA-001",
     tipo: "Bilhete de identidade",
-    iniciais: "A. M. S.",
+    iniciais: "I. A. P. C.",
     zona: "Viana",
     data: "2026-11-02",
     estado: "Disponível"
@@ -41,7 +41,7 @@ const documentos = [
     iniciais: "P. F. P.",
     zona: "Desvio do Zango",
     data: "2026-11-07",
-    estado: "Em contacto"
+    estado: "Entregue"
   }, 
 ];
 
