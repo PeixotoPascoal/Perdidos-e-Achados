@@ -231,3 +231,31 @@ a { color: var(--azul); }
   .hero .container { padding: 40px 24px; }
   .secao-clara .container { padding: 32px 22px; }
 }
+
+/* Contacto do rodapé */
+.contacto-linha {
+display: flex;
+align-items: center;
+flex-wrap: wrap;
+gap: 12px;
+}
+.rodape a.contacto-botao {
+display: inline-flex;
+align-items: center;
+gap: 10px;
+padding: 9px 20px 9px 12px;
+border: 1px solid rgba(255, 255, 255, 0.45);
+border-radius: 999px;
+color: var(--branco);
+text-decoration: none;
+font-weight: 600;
+letter-spacing: 0.5px;
+transition: background 0.2s ease, border-color 0.2s ease;
+}
+.rodape a.contacto-botao:hover {
+background: rgba(255, 255, 255, 0.14);
+border-color: var(--branco);
+}
+.icone-whatsapp {
+flex-shrink: 0;
+}
