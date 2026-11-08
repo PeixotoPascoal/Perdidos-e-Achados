@@ -227,8 +227,3 @@ a { color: var(--azul); }
   .hero { padding: 56px 0; }
   .secao { padding: 44px 0; }
 }
-@media (max-width: 600px) {
-  .hero .container { padding: 40px 24px; }
-  .secao-clara .container { padding: 32px 22px; }
-}
-
