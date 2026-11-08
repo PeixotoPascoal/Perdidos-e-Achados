@@ -64,14 +64,9 @@ a { color: var(--azul); }
 
 /* Hero */
 .hero {
-  padding: 40px 0 8px;
-}
-.hero .container {
   background: linear-gradient(135deg, var(--azul-escuro), var(--azul));
   color: var(--branco);
-  padding: 64px 48px;
-  border-radius: 16px;
-  box-shadow: 0 12px 32px rgba(18, 38, 63, 0.28);
+  padding: 84px 0;
 }
 .hero h1 { font-size: clamp(1.9rem, 4vw, 2.8rem); line-height: 1.2; margin-bottom: 18px; }
 .hero-texto { max-width: 620px; font-size: 1.1rem; opacity: 0.92; margin-bottom: 28px; }
@@ -93,17 +88,7 @@ a { color: var(--azul); }
 
 /* Secções */
 .secao { padding: 64px 0; }
-.secao-clara {
-  background: transparent;
-  border: none;
-}
-.secao-clara .container {
-  background: var(--branco);
-  border: 1px solid var(--cinza-borda);
-  border-radius: 16px;
-  box-shadow: 0 8px 24px rgba(18, 38, 63, 0.12);
-  padding: 44px 40px;
-}
+.secao-clara { background: var(--branco); border-top: 1px solid var(--cinza-borda); border-bottom: 1px solid var(--cinza-borda); }
 .secao h2 { color: var(--azul-escuro); font-size: 1.8rem; margin-bottom: 8px; }
 .secao-intro { color: var(--cinza-medio); margin-bottom: 28px; }
 .secao p + p { margin-top: 14px; }
@@ -192,36 +177,7 @@ a { color: var(--azul); }
 .rodape a { color: var(--branco); }
 .rodape h3 { color: var(--branco); margin-bottom: 8px; font-size: 1.05rem; }
 .rodape-conteudo { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 28px; padding-bottom: 28px; }
-.rodape-fim { border-top: 1px solid rgba(255,255,255,0.15); padding: 16px 0; font-size: 0.88rem; }
-
-/* Contacto do rodapé */
-.contacto-linha {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 12px;
-}
-.contacto-rotulo {
-  font-size: 1rem;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  color: #aebccd;
-}
-.rodape a.contacto-botao {
-  display: inline-block;
-  padding: 2px 8px;
-  border: 0.5px solid rgba(255, 255, 255, 0.45);
-  border-radius: 999px;
-  color: var(--branco);
-  text-decoration: none;
-  font-weight: 500;
-  letter-spacing: -0.5px;
-  transition: background 0.2s ease, border-color 0.2s ease;
-}
-.rodape a.contacto-botao:hover {
-  background: rgba(255, 255, 255, 0.14);
-  border-color: var(--branco);
-}
+.rodape-fim { border-top: 1px solid rgba(255,255,255,0.15); padding: 16px 0; font-size: 0.88rem; }
 
 @media (max-width: 600px) {
   .hero { padding: 56px 0; }
